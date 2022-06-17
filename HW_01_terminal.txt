@@ -1,0 +1,100 @@
+#1. Посмотреть где я		
+pwd
+
+#2. Создать папку		
+mkdir folder
+
+#3. Зайти в папку		
+cd folder
+
+#4. Создать 3 папки		
+mkdir folder_1 folder_2 folder_3
+
+#5. Зайти в любую папку		
+cd folder_1
+
+#6. Создать 5 файлов (3 txt, 2 json)	
+touch 01.txt 02.txt 03.txt 04.json 05.json
+
+#7. Создать 3 папки		
+mkdir folder_1 folder_2 folder_3
+
+#8. Вывести список содержимого папки	
+ls -la
+
+#9. Открыть любой txt файл	
+vim 01.txt
+
+#10. написать туда что-нибудь, любой текст.	
+i
+
+#11. сохранить и выйти.	
+escape :wq!
+
+#12. Выйти из папки на уровень выше	
+cd ..
+
+#13. переместить любые 2 файла, которые вы создали, в любую другую папку.	
+mv folder/04.json folder/05.json folder_1
+
+#14. скопировать любые 2 файла, которые вы создали, в любую другую папку.	
+cp folder/01.txt folder/02.txt folder_2
+
+#15. Найти файл по имени		
+find -name 01.txt
+
+#16. просмотреть содержимое в реальном времени (команда grep) изучите как она работает   
+tail -f 01.txt | grep ls	
+		
+#17. вывести несколько первых строк из текстового файла	
+head --line=3 01.txt
+
+#18. вывести несколько последних строк из текстового файла	
+tail --line=3 01.txt
+
+#19. просмотреть содержимое длинного файла (команда less) изучите как она работает.	less 01.txt # просмотреть содержимое файла
+	/ текст # поиск вниз по тексту
+	? текст # поиск вверх по тексту
+	less -s 01.txt # заменяет несколько идущих подряд пустых строк одной
+	q # выйти
+
+#20. вывести дату и время	
+date				
+date +%D%T
+
+#Задание *
+#1. Отправить http запрос на сервер.
+curl http://162.55.220.72:5005/terminal-hw-request
+curl http://162.55.220.72:5005/get_method?'name=Anna&age=35'
+
+#2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+touch myscript.sh
+vim myscript.sh
+
+____________________________________________________________________
+i
+
+#!/bin/bash
+
+mkdir folder 				#create new directory
+
+cd folder 				#go  into new directory
+
+mkdir folder01 folder02 folder03 	#create 3 new directories
+
+cd folder01 				#go to any directory
+
+touch 01.txt 02.txt 03.txt 04.json 05.json #create 5 files
+
+mkdir folder04 folder05 folder06 	#create 3 new directories
+
+ls -la 					#list the contents of the directory
+
+mv 01.txt 02.txt folder04 		#move 2 files to another directory
+
+
+escape
+:wq!
+_____________________________________________________________________
+
+./myscript.sh
