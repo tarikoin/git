@@ -1,0 +1,294 @@
+#Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+#https://github.com/tarikoin
+#JSON
+#4. Создать внешний репозиторий c названием JSON.
+Repositories -> New -> JSON
+
+#5. Клонировать репозиторий JSON на локальный компьютер.
+git clone git@github.com:tarikoin/JSON.git
+
+#6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+
+#7. Добавить файл под гит.
+git add new.json
+
+#8. Закоммитить файл.
+git commit -m "the first json created"
+
+#9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+#10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+$ cat >> new.json
+{
+     name: "Anna",
+     age: 35,
+     pets: 1,
+     salary: 1000
+}
+Ctrl+C
+
+#11. Отправить изменения на внешний репозиторий.
+git add new.json
+git commit -m "file modified"
+git push
+
+#12. Создать файл preferences.json
+touch preferences.json
+
+#13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+$ cat >> preferences.json
+{
+     film: null,
+     series: "CSI",
+     food: "pizza",
+     season: "spring",
+     country: Slovenia"
+}
+
+#14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+
+#15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -m "2 new files created"
+git push
+
+#16. На веб интерфейсе создать файл bug_report.json.
+#Repository "JSON" -> Add file -> Create new file -> bug_report.json
+
+#17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit new file
+
+#18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+#Edit this file
+{
+    "Bug Title": "Поле количества единиц товара в корзине допускает ввод нечисловых значений",
+    "Bug ID": "WB-0001",
+    "Environment": "Google Chrome Версия 100.0.4896.127 (Официальная сборка), (64 бит)",
+    "Priority": "Medium",
+    "Reported By": "Anna",
+    "Reported On": 2022/06/18,
+    "Type": "Bug",
+    "Status": "New",
+    "Description": "Поле количества единиц товара в корзине допускает ввод нечисловых значений и оформление заказа с этими значениями",
+    "Steps To Reproduce": "1. Добавить товар в корзину (например: https://www.wildberries.ru/catalog/23018620/detail.aspx?targetUrl=XS); 2. Перейти в корзину; 3. В поле количества единиц товара ввести любое нечисловое значение (например: ФФ)",
+    "Expected Result": "Нечисловое значение не вводится в поле количества товара либо появляется сообщение об ошибке",
+    "Actual Result": "Нечисловое значение вводится и сохраняется в поле количества товара"
+}
+
+#19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit changes
+
+#20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+#___________________________________________________________________
+#XML
+#21. Создать внешний репозиторий c названием XML.
+#Repositories -> New -> XML
+
+#22. Клонировать репозиторий XML на локальный компьютер.
+#Code -> SSH -> copy link
+git clone git@github.com:tarikoin/XML.git
+
+#23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+#24. Добавить файл под гит.
+git add new.xml
+
+#25. Закоммитить файл.
+git commit -m "new xml file created"
+
+#26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+#27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+cat >> new.xml
+<?xml version = "1.0"?>
+<CAT>
+    <NAME>Anna</NAME>
+    <AGE>35</AGE>
+    <PET>1</PET>
+    <SALARY>1000</SALARY>
+</CAT>
+Ctrl+C
+
+#28. Отправить изменения на внешний репозиторий.
+git add new.xml
+git commit -m "xml file modified"
+git push
+
+#29. Создать файл preferences.xml
+touch preferences.xml
+
+#30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+$ cat > preferences.xml
+<?xml version = "1.0"?>
+<CAT>
+    <FILM></FILM>
+    <SERIES>CSI</SERIES>
+    <FOOD>pizza</FOOD>
+    <SEASON>spring</SEASON>
+    <COUNTRY>Slovenia</COUNTRY>
+</CAT>
+Ctrl+C
+
+#31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+$ cat >> skills.xml
+<?xml version = "1.0"?>
+<SKILLS>
+    <SKILL>Base theory</SKILL>
+    <SKILL>Client Server Architecture<SKILL>
+    <SKILL>HTTP</SKILL>
+    <SKILL>JSON, XML</SKILL>
+    <SKILL>API, Postman</SKILL>
+    <SKILL>Charles, Fiddler</SKILL>
+    <SKILL>Dev Tools</SKILL>
+    <SKILL>VPN</SKILL>
+    <SKILL>Mobile Testing</SKILL>
+    <SKILL>bash, terminal</SKILL>
+    <SKILL>SQL, Postgres</SKILL>
+    <SKILL>Redis</SKILL>
+    <SKILL>JMeter</SKILL>
+    <SKILL>Scrum</SKILL>
+</SKILLS>
+Ctrl+C
+
+#32. Сделать коммит в одну строку.
+git add . | git commit -m "2 new XML files added"
+
+#33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+#34. На веб интерфейсе создать файл bug_report.xml.
+#Repository "XML" -> Add file -> Create new file -> bug_report.xml
+
+#35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit changes
+
+#36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+#bug_report.xml -> Edit this file:
+<?xml version = "1.0"?>
+<REPORT>
+    <TITLE>Поле количества единиц товара в корзине допускает ввод нечисловых значений</TITLE>
+    <ID>WB-0001</ID>
+    <ENVIRONMENT>Google Chrome Версия 100.0.4896.127 (Официальная сборка), (64 бит)</ENVIRONMENT>
+    <PRIORITY>Medium</PRIORITY>
+    <REPORTED_BY>Anna</REPORTED_BY>
+    <REPORTED_ON>2022/06/18</REPORTED_ON>
+    <TYPE>Bug</TYPE>
+    <STATUS>New</STATUS>
+    <DESCRIPTION>Поле количества единиц товара в корзине допускает ввод нечисловых значений и оформление заказа с этими значениями"</DESCRIPTION>
+    <STEPS>
+        <STEP>1. Добавить товар в корзину (например: https://www.wildberries.ru/catalog/23018620/detail.aspx?targetUrl=XS)</STEP>
+        <STEP>2. Перейти в корзину</STEP>
+        <STEP>3. В поле количества единиц товара ввести любое нечисловое значение (например: ФФ)"</STEP>
+    </STEPS>
+    <EXPECTED_RESULT>Нечисловое значение не вводится в поле количества товара либо появляется сообщение об ошибке</EXPECTED_RESULT>
+    <ACTUAL_RESULT>Нечисловое значение вводится и сохраняется в поле количества товара</ACTUAL_RESULT>
+</REPORT>
+
+#37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit changes
+
+#38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+#________________________________________________________________
+#TXT
+#1. Создать внешний репозиторий c названием TXT.
+#Repositories -> New -> TXT
+
+#2. Клонировать репозиторий TXT на локальный компьютер.
+#Repository TXT -> SSH -> Copy Link
+git clone git@github.com:tarikoin/TXT.git
+
+#3. Внутри локального TXT создать файл “new.txt”.
+touch new.txt
+
+#4. Добавить файл под гит.
+git add new.txt
+
+#5. Закоммитить файл.
+git commit -m "the first TXT file created"
+
+#6. Отправить файл на внешний GitHub репозиторий.
+git push
+
+#7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+cat > new.txt
+Name: Anna
+Age: 35
+Pets: 1
+Salary: 1000
+Ctrl+C
+
+#8. Отправить изменения на внешний репозиторий.
+git add new.txt
+git commit -m "the TXT file modified"
+git push
+
+#9. Создать файл preferences.txt
+touch preferences.txt
+
+#10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+$ cat > preferences.txt
+Film:
+Series: CSI
+Food: Pizza
+Season: Spring
+Country: Slovenia
+
+#11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ cat > skills.txt
+1: Base Theory
+2: Client Server Architecture"
+3: HTTP
+4: JSON, XML
+5: API, Postman
+6: Charles, Fiddler
+7: Dev Tools
+8: VPN
+9: Mobile Testing
+10: bash, terminal
+11: SQL
+12: Redis
+13: JMeter
+14: Scrum
+
+#12. Сделать коммит в одну строку.
+git add preferences.txt skills.txt | git commit -m "2 TXT files added"
+
+#13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+#14. На веб интерфейсе создать файл bug_report.txt.
+#Repository "TXT" -> Add file -> Create new file -> bug_report.txt
+
+#15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit changes
+
+#16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+#bug_report.xml -> Edit this file:
+Bug Title: Поле количества единиц товара в корзине допускает ввод нечисловых значений
+Bug ID: WB-0001
+Environment: Google Chrome Версия 100.0.4896.127 (Официальная сборка), (64 бит)
+Priority: Medium
+Reported By: Anna
+Reported On: 2022/06/18
+Type: Bug
+Status: New
+Description: Поле количества единиц товара в корзине допускает ввод нечисловых значений и оформление заказа с этими значениями
+Steps To Reproduce: 1. Добавить товар в корзину (например: https://www.wildberries.ru/catalog/23018620/detail.aspx?targetUrl=XS); 2. Перейти в корзину; 3. В поле количества единиц товара ввести любое нечисловое значение (например: ФФ)
+Expected Result: Нечисловое значение не вводится в поле количества товара либо появляется сообщение об ошибке
+Actual Result: Нечисловое значение вводится и сохраняется в поле количества товара
+
+#17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+#Commit changes
+
+#18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
